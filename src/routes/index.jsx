@@ -10,6 +10,7 @@ function Index() {
     <Routes>
       <Route path="/" element={<Home />} />
     </Routes>
+    // <Home />
   );
 }
 export default Index;

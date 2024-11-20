@@ -1,4 +1,309 @@
-/* Header Component Style */
-h1 {
-  color: red;
+.HoleSection {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  -webkit-tap-highlight-color: transparent;
+  opacity: .7;
+  height: 10vh;
+
+}
+
+.close-button {
+  display: none;
+}
+
+
+.logo img {
+  width: 150px;
+  margin-top: 15px;
+}
+
+.links ul {
+  display: flex;
+  list-style: none;
+}
+
+.links li {
+  padding: 20px;
+}
+
+li:hover {
+  color: #fec544;
+  cursor: pointer;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: #fec544;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.parent {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  position: fixed;
+  z-index: 11;
+}
+
+.phone {
+  display: flex;
+  color: #fec544;
+  padding-left: 10PX;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  color: #fec544;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* App.css or relevant CSS file */
+
+/* Default styles for the links (visible on larger screens) */
+.links {
+  display: flex;
+}
+
+.links ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.links li {
+  margin-right: 20px;
+}
+
+/* Styling for toggle button (hamburger icon) */
+.toggle-button {
+  display: none;
+  /* Initially hide the button on larger screens */
+  cursor: pointer;
+}
+
+/* Media query for screens 600px or smaller */
+@media (max-width: 879px) {
+
+  /* Show the hamburger menu */
+  .toggle-button {
+    display: block;
+  }
+
+  /* Hide the links by default */
+  .links {
+    display: none;
+
+  }
+
+  .parent {
+    position: relative;
+  }
+
+  .toggle-button {
+    margin-left: 30%;
+  }
+
+
+  /* Show the links when the menu is toggled */
+  .links.active {
+    display: block;
+    text-align: center;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    /* height: 10vh; */
+    opacity: 1;
+  }
+
+  .HoleSection {
+    opacity: 1;
+    justify-content: space-between;
+  }
+
+  .phone {
+    display: none;
+  }
+
+  /* Stack the links vertically when the menu is open */
+  .links ul {
+    display: block;
+    padding: 0;
+  }
+
+  .links li {
+    margin: 15px 0;
+  }
+
+
+}
+
+
+
+@media (max-width:1024px) {
+  .links li {
+    padding: 10px;
+  }
+
+}
+
+/* @media (max-width:950px) {
+  .navbar {
+    background-color: black;
+  }
+
+} */
+
+
+@media (max-width: 600px) {
+
+  /* Sidebar hidden state */
+  .links {
+    position: fixed;
+    top: 0;
+    left: -70%;
+    /* Move it completely off-screen to the left */
+    width: 70%;
+    /* Set the width to 70% of the screen */
+    height: 100vh;
+    /* Full screen height */
+    background-color: black;
+    transition: left 0.5s ease;
+    /* Smooth transition for the `left` property */
+    display: flex;
+    flex-direction: column;
+    opacity: 0.9;
+    z-index: 100;
+    /* Ensure it's above all other elements */
+    padding-top: 20px;
+  }
+
+  /* Sidebar visible state */
+  .links.active {
+    left: 0;
+    /* Bring it to the visible area of the screen */
+  }
+
+  /* Styling for the unordered list */
+  .links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  /* Styling for each list item */
+  .links li {
+    padding: 15px 20px;
+    text-align: left;
+    color: white;
+    font-size: 18px;
+    border-bottom: 1px solid #fec544;
+    /* Optional for better visibility */
+  }
+
+  /* Styling for anchor links */
+  .links a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100%;
+  }
+
+  .links a:hover {
+    color: #fec544;
+    /* Change color on hover */
+  }
+
+  /* Close button styling */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #fec544;
+    cursor: pointer;
+    background: none;
+    border: none;
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+
+  /* Sidebar hidden state */
+  .links {
+    position: fixed;
+    top: 0;
+    left: -70%;
+    /* Initially hidden */
+    width: 70%;
+    /* Set the width of the menu */
+    height: 100vh;
+    /* Full viewport height */
+    background-color: black;
+    /* Background color black */
+    transition: left 0.5s ease;
+    /* Smooth slide-in transition */
+    display: flex;
+    flex-direction: column;
+    opacity: 0.9;
+    /* Slight transparency (optional) */
+    z-index: 100;
+    /* Ensure it is above other elements */
+    padding-top: 20px;
+  }
+
+  /* Sidebar visible state */
+  .links.active {
+    left: 0;
+    /* Slide into the visible area */
+    background-color: black;
+    /* Re-assert black background */
+  }
+
+  /* Styling for links */
+  .links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .links li {
+    padding: 15px 20px;
+    text-align: left;
+    color: white;
+    /* Text color white to contrast */
+    font-size: 18px;
+    border-bottom: 1px solid #fec544;
+    /* Optional for better visibility */
+  }
 }

@@ -11,10 +11,10 @@ import './css/index.css';
 function App() {
   return (
     <div className="App">
-      {/* toastify Container for Notification */}
+
       <ToastContainer position="bottom-right" autoClose={3000} hideProgressBar transition={Flip} />
 
-      {/* Routes */}
+
       <Index />
     </div>
   );

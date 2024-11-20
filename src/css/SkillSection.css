@@ -1,0 +1,90 @@
+.yellowline {
+    border-bottom: 3px solid #fec544;
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+.cdcddc {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.oneContent {
+    flex: 0 0 auto;
+    width: 35%;
+}
+
+.oneContent h1 {
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    clear: both;
+    color: #fdfeff;
+    padding: 0;
+    margin: 0 0 10px;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+
+.lined {
+    flex: 0 0 auto;
+    width: 25%;
+}
+
+.oneContent p {
+    line-height: 1.35em;
+    word-spacing: 2px;
+}
+
+.both {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.both p {
+    clear: both;
+    color: #fdfeff;
+    padding: 0;
+    margin: 0 0 10px;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+
+.percent {
+    color: #fec544;
+    font-weight: 400;
+}
+
+
+
+@media (max-width: 600px) {
+    .cdcddc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .oneContent {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 10%;
+    }
+
+    .lined {
+        width: 100%;
+        position: relative;
+        top: 50px;
+        left: 10px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .lined {}
+}

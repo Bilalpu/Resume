@@ -1,0 +1,174 @@
+.first-imagecontainer {
+    position: relative;
+    width: 30%;
+    overflow: hidden;
+}
+
+
+.first-imagecontainer img {
+    width: 100%;
+    height: 40vh;
+    padding-left: 10px;
+    opacity: 1;
+    transition: opacity 0.3s;
+    margin-bottom: 10%;
+
+}
+
+.first-imagecontainer img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.allProject {
+    margin-left: 10%;
+}
+
+.overlay {
+    position: absolute;
+    top: .5px;
+    left: 10px;
+    width: 100%;
+    border-radius: 5px;
+    height: 40vh;
+    /* background: rgba(77, 77, 77, 0.9);
+     */
+    background: black;
+    color: #FEF5DF;
+    opacity: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+    transition: opacity 0.5s;
+    cursor: pointer;
+}
+
+.alagp {
+    opacity: 1;
+}
+
+
+.items {
+    padding-left: 20px;
+    letter-spacing: 3px;
+}
+
+.head {
+    font-size: 30px;
+    line-height: 40px;
+    transform: translateY(40px);
+    transition: all 0.7s;
+}
+
+.head hr {
+    display: block;
+    width: 0;
+    border: none;
+    border-bottom: solid 2px #FEF5DF;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    transition: width 0.5s;
+}
+
+.price {
+    font-size: 22px;
+    line-height: 10px;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.7s;
+}
+
+.price .old {
+    text-decoration: line-through;
+    color: #CCCCCC;
+}
+
+.cart {
+    font-size: 12px;
+    opacity: 0;
+    letter-spacing: 1px;
+    transform: translateY(40px);
+    transition: all 0.7s;
+}
+
+.overlay:hover {
+    opacity: .6;
+}
+
+.overlay:hover .head {
+    transform: translateY(0px);
+}
+
+.overlay p {
+    color: #fec544;
+    opacity: 1;
+    font-weight: 700;
+}
+
+.overlay:hover p {
+    opacity: 1;
+    /* Ensure text stays fully visible during hover */
+}
+
+.overlay:hover hr {
+    width: 75px;
+    transition-delay: 0.4s;
+}
+
+.overlay:hover .price {
+    transform: translateY(0px);
+    transition-delay: 0.3s;
+    opacity: .7;
+}
+
+.overlay:hover .cart {
+    transform: translateY(0px);
+    transition-delay: 0.6s;
+    opacity: .7;
+}
+
+.six-image {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* .first-imagecontainer {
+    position: relative;
+    width: 30%;
+    overflow: hidden;
+}
+
+.first-imagecontainer img {
+    width: 100%;
+    height: 40vh;
+    padding-left: 10px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.first-imagecontainer img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* Overlay Styling */
+
+
+@media(max-width:800px) {
+    .Subtitle h1 {
+        font-size: 40px;
+    }
+
+    .six-image {
+        display: flex;
+        flex-direction: column;
+        margin-left: -11%;
+    }
+
+    .first-imagecontainer {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,228 @@
+.circlees {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.ssssss {
+    display: flex;
+    align-items: center;
+
+
+
+}
+
+.ssssss h2 {
+    margin-left: 10px;
+}
+
+.Location p {
+    margin-top: -12px;
+
+    margin-right: 10px;
+}
+
+
+/* .ssssss p {
+    margin-top: 15px;
+} */
+
+.email,
+.Contact,
+.Location {
+    padding-bottom: 20px;
+}
+
+.email p {
+    margin-top: 10px;
+}
+
+.Contact p {
+    margin-top: 10px;
+}
+
+.Location p {
+    margin-bottom: 10px;
+}
+
+.svg {
+    font-size: 25px;
+    color: White;
+
+}
+
+.Parents:hover .wwwd {
+    color: white;
+}
+
+.Parents:hover .circlees {
+    border: 2px solid #fec544;
+}
+
+.Parents:hover .svg {
+    color: #fec544;
+
+}
+
+.Parents:hover h2 {
+    color: #fec544;
+}
+
+.Parents:hover p {
+    color: white;
+}
+
+/* .email,
+.Contact,
+.Location {
+    display: flex;
+    align-items: center;
+} */
+
+
+
+.sub-parent {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.Parents {
+    margin-left: 2%;
+}
+
+.visot h3 {
+    margin-top: 10px;
+}
+
+
+.Parents:hover .visot h3 {
+    color: white;
+}
+
+.Parents:hover .socialtags {
+    color: #fec544;
+    transition: none;
+}
+
+.Parents:hover .socialtags h5 {
+    color: white;
+    transition: none;
+}
+
+.Parents:hover .Parent h1 {
+    color: white;
+}
+
+.Parents:hover .icon-container {
+    color: #fec544;
+}
+
+.socialtags {
+    display: flex;
+    gap: 15px;
+}
+
+.social-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: black;
+    /* Icon and text color */
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 30px;
+    width: 50px;
+    /* Initial circle size */
+    height: 50px;
+    /* Initial circle height */
+    border-radius: 50%;
+    /* Makes the container a circle */
+    background-color: #101624;
+    /* Circle background color */
+    overflow: hidden;
+    /* Hide overflow of text */
+    transition: width 0.3s ease, height 0.3s ease, border-radius 0.3s ease;
+    /* Transition for width, height, and border-radius */
+    position: relative;
+    background-color: #070d1b;
+    color: white;
+    border: 1px solid #3f4551;
+    padding: 10px;
+    /* To control position of text next to the icon */
+}
+
+.text {
+    visibility: hidden;
+    /* Hide text by default */
+    opacity: 0;
+    margin-left: -24px;
+    position: absolute;
+    left: 65px;
+    /* Position text next to the circle */
+    top: 50%;
+    /* Align text vertically to the center */
+    transform: translateY(-50%);
+    /* Correct vertical alignment */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    /* Smooth transition for text */
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    color: white;
+
+    /* Prevent text from wrapping */
+}
+
+.social-link:hover .icon-container {
+    width: 115px;
+    /* Expanded width of the circle on hover */
+    height: 40px;
+    /* Expanded height of the circle on hover */
+    border-radius: 10px;
+    padding: 10px;
+
+    /* Rounded corners on hover */
+}
+
+.social-link:hover .text {
+    visibility: visible;
+    /* Show text on hover */
+    opacity: 1;
+}
+
+.Hello h1 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+@media (max-width:800px) {
+
+
+    .sub-parent {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+
+    }
+
+    .conatad {
+        margin-top: 8%;
+        height: 75vh;
+    }
+
+    .band {
+        position: relative;
+        bottom: 230px;
+    }
+}

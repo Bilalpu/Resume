@@ -1,5 +1,12 @@
 /* Importing all CSS files */
 @import url('./Header.css');
+@import './MainSection.css';
+@import './AboutSection.css';
+@import './ServiceSection.css';
+@import './SkillSection.css';
+@import './ResumeSection.css';
+@import './ContactSection.css';
+@import './ProjectSection.css';
 
 /* Defaults */
 * {
