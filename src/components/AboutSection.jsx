@@ -1,14 +1,13 @@
-/* eslint-disable react/button-has-type */
 import React from 'react';
 import Face from '../assets/fc5d38c1-432b-491d-9b2c-fa1fcb1a17e8.jpg';
 
 const Data = [
-  { name: 'Birthday :  13 October   ' },
-  { name: 'Phone :  +92 300 429 3894  ' },
-  { name: 'Email : bilalqureshi752b@gmail.com    ' },
-  { name: 'Language :  English , Germani, Urdu, etc  ' },
-  { name: 'From :  Lahore, Pakistan ' },
-  { name: 'Available : 24/7 Week   ' },
+  { id: 1, name: 'Birthday :  13 October   ' },
+  { id: 2, name: 'Phone :  +92 300 429 3894  ' },
+  { id: 3, name: 'Email : bilalqureshi752b@gmail.com    ' },
+  { id: 4, name: 'Language :  English , Germani, Urdu, etc  ' },
+  { id: 5, name: 'From :  Lahore, Pakistan ' },
+  { id: 6, name: 'Available : 24/7 Week   ' },
 ];
 
 function AboutSection() {
@@ -47,14 +46,15 @@ function AboutSection() {
               </p>
             </div>
 
-            {Data.map((item, index) => (
-              // eslint-disable-next-line react/no-array-index-key
-              <div className="info" key={index}>
+            {Data.map((item) => (
+              <div className="info" key={item?.id}>
                 <p>{item.name}</p>
               </div>
             ))}
             <div className="btn">
-              <button onClick={handleDownload}>Download CV</button>
+              <button type="button" onClick={handleDownload}>
+                Download CV
+              </button>
             </div>
           </header>
         </div>
