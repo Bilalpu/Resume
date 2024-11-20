@@ -12,7 +12,6 @@ const Data = [
 
 const AboutSection = () => {
     const handleDownload = () => {
-        // Trigger the download
         const link = document.createElement('a');
         link.href = Face; // Path to your CV file
         link.download = Face; // The file name to download
